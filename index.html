@@ -3,46 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desi Adda: Quiz & Party — Support</title>
+  <title>Desi Adda — The Ultimate Indian Pop Culture Trivia App</title>
+  <meta name="description" content="Test your Bollywood, Cricket & Indian pop culture knowledge. Solo quizzes, multiplayer battles, daily challenges, emoji puzzles & more!">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #1a1a2e; color: #eee; padding: 40px 20px; line-height: 1.6; }
-    .container { max-width: 600px; margin: 0 auto; }
-    h1 { font-size: 28px; margin-bottom: 8px; }
-    .subtitle { color: #aaa; margin-bottom: 32px; }
-    h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #ff6b6b; }
-    p, li { color: #ccc; margin-bottom: 8px; }
-    ul { padding-left: 20px; }
-    a { color: #ff6b6b; text-decoration: none; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0F0A1A; color: #eee; line-height: 1.6; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 80px 20px 60px; background: linear-gradient(180deg, #1a1040 0%, #0F0A1A 100%); }
+    .hero-emoji { font-size: 72px; margin-bottom: 16px; }
+    .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 8px; }
+    .hero h1 span { background: linear-gradient(90deg, #FFD700, #FF6B6B); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero .tagline { font-size: 18px; color: #aaa; margin-bottom: 36px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .store-badges { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .store-badges a img { height: 52px; border-radius: 8px; transition: transform 0.2s; }
+    .store-badges a img:hover { transform: scale(1.05); }
+    .badge-placeholder { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #222; border-radius: 10px; color: #888; font-size: 14px; border: 1px solid #333; }
+
+    /* Features */
+    .features { padding: 60px 20px; max-width: 800px; margin: 0 auto; }
+    .features h2 { text-align: center; font-size: 26px; margin-bottom: 40px; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .feature-card { background: #1a1530; border: 1px solid #2a2545; border-radius: 16px; padding: 24px; text-align: center; transition: border-color 0.2s; }
+    .feature-card:hover { border-color: #FFD700; }
+    .feature-icon { font-size: 40px; margin-bottom: 12px; }
+    .feature-card h3 { font-size: 16px; margin-bottom: 6px; color: #fff; }
+    .feature-card p { font-size: 13px; color: #999; }
+
+    /* Game modes */
+    .modes { padding: 40px 20px 60px; max-width: 700px; margin: 0 auto; }
+    .modes h2 { text-align: center; font-size: 26px; margin-bottom: 32px; }
+    .mode-list { display: flex; flex-direction: column; gap: 16px; }
+    .mode-item { display: flex; align-items: center; gap: 16px; background: #1a1530; border-radius: 12px; padding: 18px 20px; border: 1px solid #2a2545; }
+    .mode-item .mode-emoji { font-size: 32px; flex-shrink: 0; }
+    .mode-item h3 { font-size: 15px; color: #FFD700; margin-bottom: 2px; }
+    .mode-item p { font-size: 13px; color: #999; }
+
+    /* Support */
+    .support { padding: 40px 20px 60px; max-width: 600px; margin: 0 auto; }
+    .support h2 { font-size: 22px; margin-bottom: 16px; color: #FF6B6B; }
+    .support p, .support li { color: #ccc; margin-bottom: 8px; }
+    .support ul { padding-left: 20px; }
+    a { color: #FF6B6B; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #333; color: #666; font-size: 13px; }
+
+    /* Footer */
+    .footer { text-align: center; padding: 32px 20px; border-top: 1px solid #1a1530; color: #555; font-size: 13px; }
+    .footer-links { margin-bottom: 8px; }
+    .footer-links a { margin: 0 12px; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🎬 Desi Adda: Quiz & Party</h1>
-    <p class="subtitle">Indian Film and Sports Trivia</p>
 
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-emoji">🎬</div>
+    <h1><span>Desi Adda</span></h1>
+    <p class="tagline">The ultimate Indian pop culture trivia app — Bollywood, Cricket, Music & more. Play solo, challenge friends, and climb the leaderboard!</p>
+    <div class="store-badges">
+      <a href="https://apps.apple.com/app/id6762740099" target="_blank">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+      </a>
+      <span class="badge-placeholder">🤖 Android — Coming Soon</span>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <h2>Why You'll Love It</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <h3>1000+ Questions</h3>
+        <p>Bollywood decades, regional cinema, cricket legends, and more</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚔️</div>
+        <h3>Multiplayer Battles</h3>
+        <p>Quick match or private rooms — compete with friends in real time</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📅</div>
+        <h3>Daily Challenges</h3>
+        <p>Hangman, Word Search & Crossword puzzles refreshed daily</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">😜</div>
+        <h3>Emoji Mode</h3>
+        <p>Guess movies from emoji clues — a fan-favorite game mode</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎭</div>
+        <h3>Heads Up!</h3>
+        <p>Hold your phone up and act out — perfect for parties</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏆</div>
+        <h3>Leaderboards</h3>
+        <p>Earn coins, gain XP, and climb to the top</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Modes -->
+  <section class="modes">
+    <h2>Game Modes</h2>
+    <div class="mode-list">
+      <div class="mode-item">
+        <div class="mode-emoji">📝</div>
+        <div><h3>Classic Quiz</h3><p>Multiple choice trivia across dozens of categories</p></div>
+      </div>
+      <div class="mode-item">
+        <div class="mode-emoji">🎬</div>
+        <div><h3>Emoji Guess</h3><p>Decode emoji clues to guess the movie title</p></div>
+      </div>
+      <div class="mode-item">
+        <div class="mode-emoji">🙆</div>
+        <div><h3>Heads Up</h3><p>Hold phone on forehead — friends give you clues</p></div>
+      </div>
+      <div class="mode-item">
+        <div class="mode-emoji">🔠</div>
+        <div><h3>Gibberish</h3><p>Decode hilarious gibberish phrases into real movie names</p></div>
+      </div>
+      <div class="mode-item">
+        <div class="mode-emoji">🔤</div>
+        <div><h3>Wordle</h3><p>Guess the Bollywood movie in 6 tries — daily puzzle</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support & FAQ -->
+  <section class="support" id="support">
     <h2>Support</h2>
-    <p>Having trouble with the app? We're here to help!</p>
+    <p>Having trouble? We're here to help!</p>
     <p>Email us at: <a href="mailto:akshatvaidya@icloud.com">akshatvaidya@icloud.com</a></p>
 
     <h2>FAQ</h2>
     <ul>
-      <li><strong>How do I sign in?</strong> — You can play as a guest, or sign in with Google or Apple to save your progress across devices.</li>
-      <li><strong>How does multiplayer work?</strong> — Create a private room and share the code with friends, or use Quick Match to find an opponent.</li>
-      <li><strong>Can I play offline?</strong> — Solo quiz mode and Heads Up work offline. Multiplayer requires an internet connection.</li>
-      <li><strong>How do I earn coins?</strong> — Play quizzes, win multiplayer matches, and complete daily challenges to earn coins.</li>
+      <li><strong>How do I sign in?</strong> — Play as a guest, or sign in with Google or Apple to save progress across devices.</li>
+      <li><strong>How does multiplayer work?</strong> — Create a private room and share the code, or use Quick Match to find opponents.</li>
+      <li><strong>Can I play offline?</strong> — Solo quiz and Heads Up work offline. Multiplayer needs internet.</li>
+      <li><strong>How do I earn coins?</strong> — Play quizzes, win matches, and complete daily challenges.</li>
+      <li><strong>How do I delete my account?</strong> — Go to Settings → Delete Account, or email us.</li>
     </ul>
+  </section>
 
-    <h2>Links</h2>
-    <ul>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-    </ul>
-
-    <div class="footer">
-      <p>&copy; 2025 Akshat Vaidya. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="#support">Support</a>
+      <a href="mailto:akshatvaidya@icloud.com">Contact</a>
     </div>
-  </div>
+    <p>&copy; 2025 Akshat Vaidya. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
